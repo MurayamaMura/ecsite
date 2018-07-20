@@ -74,7 +74,7 @@ text-align: right;
 			</s:form>
 			<br>
 			<div id="text-link">
-				<p>新規ユーザー登録は<a href='<s:url action="UesrCreateAction"/>'>こちら</a></p>
+				<p>新規ユーザー登録は<a href='<s:url action="UserCreateAction"/>'>こちら</a></p>
 				<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
 			</div>
 		</div>

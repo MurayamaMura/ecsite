@@ -1,0 +1,19 @@
+package com.internousdev.ecsite.dao;
+
+import java.util.ArrayList;
+
+import com.internousdev.ecsite.dto.MyPageDTO;
+
+public class MyPageDAO {
+
+	public ArrayList<MyPageDTO> getMyPageUserInfo(String item_transaction_id, String user_master_id) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	public int buyItemHistoryDelete(String item_transaction_id, String user_master_id) {
+		// TODO 自動生成されたメソッド・スタブ
+		return 0;
+	}
+
+}

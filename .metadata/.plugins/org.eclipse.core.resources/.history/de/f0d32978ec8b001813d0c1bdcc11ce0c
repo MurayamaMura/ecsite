@@ -1,0 +1,20 @@
+package com.internousdev.ecsite.dao;
+
+import java.util.ArrayList;
+
+import com.internousdev.ecsite.dto.MyPageDTO;
+
+public class MyPageDAO {
+
+	private DBConnector dbConnector = new DBConnector();
+	private Connection connection = dbConnector.getConnection();
+
+	public ArrayList<MyPageDTO> getMyPageUserInfo(String item_transaction_id, String user_master_id) throws SQLException{
+		return null;
+	}
+
+	public int buyItemHistoryDelete(String item_transaction_id, String user_master_id) {
+		return 0;
+	}
+
+}

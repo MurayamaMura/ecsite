@@ -62,10 +62,10 @@ clear:both;
 		</div>
 		<div>
 			<s:if test="errorMassage !=''">
-				<s:property value="errorMassage" escape="falese" />
+				<s:property value="errorMassage" escape="false" />
 			</s:if>
 			<table>
-			<s:form action="UserCreateAction">
+			<s:form action="UserCreateConfirmAction">
 				<tr>
 					<td>
 						<label>ログインID：</label>
