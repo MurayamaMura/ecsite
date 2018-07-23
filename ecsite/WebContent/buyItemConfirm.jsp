@@ -69,7 +69,9 @@ clear:both;
 		<div id="top">
 			<p>BuyItem</p>
 		</div>
+
 	<div>
+		<p>こちらの内容でよろしいですか?</p>
 	<s:form>
 		<tr>
 			<td>商品名</td>

@@ -14,6 +14,7 @@ public class LoginDAO {
 	private Connection connection = dbConnector.getConnection();
 	private LoginDTO loginDTO = new LoginDTO();
 
+	//ユーザー情報の取得
 	public LoginDTO getLoginUserInfo(String loginUserId,String loginPassword){
 
 		String sql = "SELECT * FROM login_user_transaction where login_id=? AND login_pass=?";

@@ -16,6 +16,12 @@ create table login_user_transaction(
 	updated_date datetime
 );
 
+create table manager_login(
+	login_id varchar(16),
+	login_pass varchar(16),
+	user_name varchar(16)
+);
+
 drop table if exists item_info_transaction;
 create table item_info_transaction(
 	id int not null primary key auto_increment,
@@ -40,3 +46,5 @@ create table user_buy_item_transaction(
 
 INSERT INTO item_info_transaction(item_name,item_price,item_stock) VALUES("ノートBook",100,50);
 INSERT INTO login_user_transaction(login_id,login_pass,user_name) VALUES("internous","internous01","test");
+
+INSERT INTO manager_login(login_id,login_pass,user_name) VALUES("1","1234","murayama");

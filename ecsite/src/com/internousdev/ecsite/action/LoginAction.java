@@ -26,11 +26,12 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
 		System.out.println(loginUserId);
 		System.out.println(loginPassword);
-
+		//ユーザ情報の検索
 		if(((LoginDTO)session.get("loginUser")).getLoginFlg()){
 			result = SUCCESS;
 			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();
 
+			//次の画面で必要な商品情報の取得
 			session.put("login_user_id",loginDTO.getLoginId());
 			session.put("id",buyItemDTO.getId());
 			session.put("buyItem_name",buyItemDTO.getItemName());
