@@ -30,6 +30,7 @@ public class LoginDTO {
 	public void setLoginFlg(boolean loginFlg) {
 		this.loginFlg = loginFlg;
 	}
+
 	public int getItemPrice() {
 		return itemPrice;
 	}

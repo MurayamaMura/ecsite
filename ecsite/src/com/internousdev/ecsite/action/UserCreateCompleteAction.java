@@ -22,6 +22,11 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 				session.get("loginPassword").toString(),
 				session.get("userName").toString());
 
+		System.out.println("■"+ session.get("loginUserId"));
+		System.out.println("■"+ session.get("loginPassword"));
+		System.out.println("■"+ session.get("userName"));
+
+
 		String result=SUCCESS;
 		return result;
 	}

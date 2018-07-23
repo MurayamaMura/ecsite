@@ -10,7 +10,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 
 	private String loginUserId;
 	private String loginPassword;
-		private String userName;
+	private String userName;
 	public Map<String,Object> session;
 	private String errorMassage;
 

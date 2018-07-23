@@ -14,7 +14,7 @@ public class BuyItemCompleteDAO {
 	private DateUtil dateUtil = new DateUtil();
 	private String sql = "INSERT INTO user_buy_item_transaction(item_transaction_id,total_price,total_count,user_master_id,pay_insert_date)VALUES(?,?,?,?,?,?)";
 
-	public void buyItemInfo(String item_transaction_id, String total_price, String total_count,String user_master_id,  String pay)
+	public void buyItemInfo(String item_transaction_id, String total_price, String total_count,String user_master_id,String pay)
 			throws SQLException{
 	try{
 		PreparedStatement prepareStatement = connection.prepareStatement(sql);
