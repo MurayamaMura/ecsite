@@ -1,0 +1,8 @@
+package com.internousdev.ecsite.dto;
+
+public class ManagerDTO {
+
+	private String loginId;
+	private String loginPassword;
+
+}

@@ -24,9 +24,9 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		loginDTO = loginDAO.getLoginUserInfo(loginUserId,loginPassword);
 		session.put("loginUser", loginDTO);
 
-		System.out.println(loginUserId);
-		System.out.println(loginPassword);
-		//ユーザ情報の検索
+		//System.out.println(loginUserId);
+		//System.out.println(loginPassword);
+
 		if(((LoginDTO)session.get("loginUser")).getLoginFlg()){
 			result = SUCCESS;
 			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();

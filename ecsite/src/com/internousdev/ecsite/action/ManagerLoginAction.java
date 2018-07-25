@@ -4,6 +4,8 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.internousdev.ecsite.dao.ManagerLoginDAO;
+import com.internousdev.ecsite.dto.ManagerLoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class ManagerLoginAction extends ActionSupport implements SessionAware{
@@ -11,15 +13,21 @@ public class ManagerLoginAction extends ActionSupport implements SessionAware{
 	private String loginUserId;
 	private String loginPassword;
 	public Map<String,Object> session;
+	private ManagerLoginDAO mLDAO = new ManagerLoginDAO();
+	private ManagerLoginDTO mLDTO = new ManagerLoginDTO();
 
-	//DAOを作らずそのままここにデータベースとの接続を書き込みたい。
 	public String execute(){
-		String result = SUCESS;
+		String result = SUCCESS;
+		mLDTO = mLDAO.getManagerLoginUserInfo(loginUserId, loginPassword);
+		session.put("loginUser",mLDTO);
 
+/*		if(((ManagerLoginDTO)session.get("loginUser")).getLoginFlg()){
+			result = SUCCESS;
+		}
 
+		*/
+		return result;
 	}
-
-
 
 	public String getLoginUserId() {
 		return loginUserId;
@@ -36,8 +44,7 @@ public class ManagerLoginAction extends ActionSupport implements SessionAware{
 
 
 	@Override
-	public void setSession(Map<String, Object> arg0) {
-		// TODO 自動生成されたメソッド・スタブ
-
+	public void setSession(Map<String, Object> session) {
+		this.session = session;
 	}
 }

@@ -6,6 +6,7 @@ public class LoginDTO {
 	private String userName;
 	private int itemPrice;
 	private boolean loginFlg = false;
+
 	public String getLoginId() {
 		return loginId;
 	}
