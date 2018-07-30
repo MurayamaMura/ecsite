@@ -1,0 +1,22 @@
+package com.internousdev.ecsite.test;
+
+import com.internousdev.ecsite.dao.ManagerLoginDAO;
+import com.internousdev.ecsite.dto.ManagerLoginDTO;
+
+public class ManagerLoginDAOTest {
+
+	public static void main(String[] args){
+		testFindByLogin1();
+		testFindByLogin2();
+	}
+
+	public static void testFindByLogin1(){
+		ManagerLoginDTO mLDTO = new ManagerLoginDTO();
+		ManagerLoginDAO mLDAO = new ManagerLoginDAO();
+		result
+	}
+
+	public static void testFindByLogin2(){
+
+	}
+}

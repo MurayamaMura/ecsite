@@ -95,6 +95,15 @@
 		class="com.internousdev.ecsite.action.ManagerLoginAction"
 		method="execute">
 		<result name="success">managerLogin.jsp</result>
+		<result name="error">manager.jsp</result>
+		</action>
+
+		<!-- AddItemConfirmAction -->
+		<action name="AddItemConfirmAction"
+		class="com.internousdev.ecsite.action.AddItemConfirmAction"
+		method="execute">
+		<result name="success">addItenConfirm.jsp</result>
+		<result name="error">managerLogin.jsp</result>
 		</action>
 
 	</package>

@@ -1,0 +1,17 @@
+package com.internousdev.ecsite.test;
+
+public class ManagerLoginDAOTest {
+
+	public static void main(String[] args){
+		testFindByLogin1();
+		testFindByLogin2();
+	}
+
+	public static void testFindByLogin1(){
+		ManagerLoginDTO mLDTO = new ManagerLoginDTO("1","1234");
+	}
+
+	public static void testFindByLogin2(){
+
+	}
+}

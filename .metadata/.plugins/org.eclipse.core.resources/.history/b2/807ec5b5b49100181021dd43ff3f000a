@@ -1,0 +1,16 @@
+package com.internousdev.ecsite.test;
+
+public class ManagerLoginDAOTest {
+
+	public static void main(String[] args){
+		testFindByLogin1();
+		testFindByLogin2();
+	}
+
+	public static void testFindByLogin1(){
+
+	}
+
+	public static void testFindByLogin2(){
+
+	}

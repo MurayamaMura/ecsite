@@ -9,6 +9,57 @@
 <title>ManagerPage</title>
 </head>
 <body>
-<h1>管理者用ページへようこそ</h1>
+<h1>管理者用ページ</h1>
+<div id="header">
+		<div id="pr"></div>
+	</div>
+	<div id="main">
+		<div id="top">
+			<p>ItemCreate</p>
+		</div>
+		<div>
+			<s:if test="errorMassage !=''">
+				<s:property value="errorMassage" escape="false" />
+			</s:if>
+			<table>
+			<s:form action="AddItemConfirmAction">
+				<tr>
+					<td>
+						<label>商品名：</label>
+					</td>
+					<td>
+						<input type="text" name="itemName" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>価格：</label>
+					</td>
+					<td>
+						<input type="text" name="itemPrice" value=""/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>在庫数：</label>
+					</td>
+					<td>
+						<input type="text" name="itemStock" value=""/>
+					</td>
+				</tr>
+				<s:submit value="登録"/>
+			</s:form>
+			</table>
+
+			<div>
+				<span>前画面に戻る場合は</span>
+				<a href='<s:url action="HomeAction"/>'>こちら</a>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div id="pr">
+	</div>
+</div>
 </body>
 </html>

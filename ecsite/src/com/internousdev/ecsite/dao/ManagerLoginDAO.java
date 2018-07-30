@@ -27,13 +27,13 @@ public class ManagerLoginDAO {
 
 			ResultSet resultSet = preparedStatement.executeQuery();
 
-			//データベスから引っ張ってきたデータをDTOに格納
 			if(resultSet.next()){
+				//結果表からデータを取得
 				mLDTO.setLoginId(resultSet.getString("login_id"));
-				mLDTO.setLoginPassword(resultSet.getString("login_password"));
+				mLDTO.setLoginPassword(resultSet.getString("login_pass"));
 				mLDTO.setUserName(resultSet.getString("user_name"));
 
-				//上記の動作で、idがあることを確認できれば、Flgを立てる
+				//idがあることを確認できれば、Flgを立てる
 				if(!(resultSet.getString("login_id").equals(null))){
 					mLDTO.setLoginFlg(true);
 				}

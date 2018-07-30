@@ -17,7 +17,7 @@ pageEncoding="UTF-8"%>
 </head>
 <body>
 	<h3>管理者ページへのログインをお願いします。</h3>
-			<s:form action="ManagerLoginAcition">
+			<s:form action="ManagerLoginAction">
 				<h6>ユーザーID/パスワード</h6>
 				<s:textfield name="loginUserId"/>
 				<s:password name="loginPassword"/>
