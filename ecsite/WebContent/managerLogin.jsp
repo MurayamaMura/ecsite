@@ -15,7 +15,7 @@
 	</div>
 	<div id="main">
 		<div id="top">
-			<p>ItemCreate</p>
+ <!-- 		<p>ItemCreate</p>
 		</div>
 		<div>
 			<s:if test="errorMassage !=''">
@@ -50,13 +50,14 @@
 				<s:submit value="登録"/>
 			</s:form>
 			</table>
-
+-->
 			<div>
+
 				<span>前画面に戻る場合は</span>
 				<a href='<s:url action="HomeAction"/>'>こちら</a>
 			</div>
-		</div>
 	</div>
+</div>
 	<div id="footer">
 	<div id="pr">
 	</div>
