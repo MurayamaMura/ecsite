@@ -98,13 +98,29 @@
 		<result name="error">manager.jsp</result>
 		</action>
 
+		<!-- AddItemAction -->
+		<action name="AddItemAction"
+		class="com.internousdev.ecsite.action.AddItemAction"
+		method="execute">
+		<result name="success">addItem.jsp</result>
+		</action>
+
 		<!-- AddItemConfirmAction -->
 		<action name="AddItemConfirmAction"
 		class="com.internousdev.ecsite.action.AddItemConfirmAction"
 		method="execute">
-		<result name="success">addItenConfirm.jsp</result>
-		<result name="error">managerLogin.jsp</result>
+		<result name="success">addItemConfirm.jsp</result>
+		<result name="error">addItem.jsp</result>
 		</action>
+
+		<!-- AddItemCompleteAction -->
+		<action name="AddItemCompleteAction"
+		class="com.internousdev.ecsite.action.AddItemCompleteAction"
+		method="execute">
+		<result name="success">addItemComplete.jsp</result>
+		<result name="error">addItemConfirm.jsp</result>
+		</action>
+
 
 	</package>
 </struts>

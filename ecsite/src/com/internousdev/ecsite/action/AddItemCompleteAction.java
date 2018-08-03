@@ -25,11 +25,19 @@ public class AddItemCompleteAction extends ActionSupport implements SessionAware
 		return result;
 	}
 
-	@Override
-	public void setSession(Map<String, Object> arg0) {
-		// TODO 自動生成されたメソッド・スタブ
 
+
+	public Map<String, Object> getSession() {
+		return session;
 	}
+
+
+
+	public void setSession(Map<String, Object> session) {
+		this.session = session;
+	}
+
+
 
 	public String getItemName() {
 		return itemName;
